@@ -1,32 +1,38 @@
 import fresh_tomatoes
 import media
 
-toy_story = media.Movie('Toy Story',
-                        'A story of a boy and his toys that come to life',
-                        'https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg',
-                        'http://www.youtube.com/watch?v=KYz2wyBy3kc')
+shrek = media.Movie('Shrek',
+                        'An anti fairy tale',
+                        'https://upload.wikimedia.org/wikipedia/en/3/39/Shrek.jpg',
+                        'http:www.youtube.com/watch?v=jYejzdBwvY4')
 
-avatar = media.Movie('Avatar',
-                     'A marine on an alien Planet',
-                     'https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg',
-                     'http://www.youtube.com/watch?v=5PSNL1qE6VY')
+ex_machina = media.Movie('Ex Machina',
+                         'A tech employee is flown to a remote location to perform the ultimate Turing test.',
+                         'https://upload.wikimedia.org/wikipedia/en/b/ba/Ex-machina-uk-poster.jpg',
+                         'http://www.youtube.com/watch?v=XYGzRB4Pnq8')
 
 this_is_40 = media.Movie('This is 40',
                          'getting older is fun to watch, not always fun to live',
                          'https://upload.wikimedia.org/wikipedia/en/e/eb/This_is_40.jpg',
                          'http://www.youtube.com/watch?v=5qLlDRyWKm4')
 
-school_of_rock = media.Movie('School of Rock',
-                             'An old rocker teaches school',
-                             'https://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg',
-                             'http://www.youtube.com/watch?v=3PsUJFEBC74')
-#school_of_rock.show_trailer()
+the_rocker = media.Movie('The Rocker',
+                         'An old washed up rocker comes back to his love of playing in a band.',
+                         'https://upload.wikimedia.org/wikipedia/en/d/d7/Rockerposter.jpg',
+                         'www.youtube.com/watch?v=CqWUXIfj2VM')
+
 braveheart = media.Movie('Braveheart',
                          'The story of William Wallace',
                          'https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg',
                          'http://www.youtube.com/watch?v=wj0I8xVTV18')
-movies = [toy_story, avatar, this_is_40, school_of_rock, braveheart]
 
-#fresh_tomatoes.open_movies_page(movies)
-print(media.Movie.__module__)
+lord_of_the_rings_1 = media.Movie('The Lord of the Rings: The Fellowship of the Ring',
+                         'The first chapter of the epic fantasy war with the ultimate evil.',
+                         'https://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg',
+                         'http://www.youtube.com/watch?v=V75dMMIW2B4')
+
+movies = [shrek, ex_machina, this_is_40, the_rocker, braveheart, lord_of_the_rings_1]
+fresh_tomatoes.open_movies_page(movies)
+
+
 
